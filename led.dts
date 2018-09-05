@@ -1,0 +1,14 @@
+/dts-v1/;
+/plugin/;
+
+/ {
+
+	fragment@0 {
+		target-path = "/leds/status_led";
+
+		__overlay__ {
+			linux,default-trigger = "heartbeat";
+		};
+	};
+};
+
